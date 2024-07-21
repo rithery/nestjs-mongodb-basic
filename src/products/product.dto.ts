@@ -12,6 +12,7 @@ export class CreateProductDto {
   readonly price: number;
 }
 
+// update product.dto.ts
 export class UpdateProductDto {
   @IsOptional()
   @IsString()
