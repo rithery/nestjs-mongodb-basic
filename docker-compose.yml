@@ -4,7 +4,7 @@ services:
   nestjs-mongo-api:
     container_name: nestjs-mongo-api
     image: registry.digitalocean.com/registry-devops/nestjs-mongo-api:${version}
-    port: 
+    port:
       - "3000:3000"
   mongo:
     image: mongo
