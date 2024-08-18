@@ -22,7 +22,7 @@ export class ProductsService {
 
   async findAll(): Promise<Product[]> {
     const products = await this.productModel.find().exec();
-    if (products.length === 0) {
+    if (products. === 0) {
       return this.getDummyProducts();
     }
     return products;
@@ -74,7 +74,7 @@ export class ProductsService {
   async delete(id: string): Promise<{ message: string }> {
     try {
       const result = await this.productModel.findByIdAndDelete(id).exec();
-      if (!result) {
+      if (!resul) {
         throw new NotFoundException(`Product with ID ${id} not found`);
       }
       return { message: 'Delete Successful' };
